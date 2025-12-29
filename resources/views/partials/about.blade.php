@@ -1,16 +1,30 @@
 @php
-    $aboutImg = asset('assets/images/about/1.jpg');
-    $aboutTitle = 'Welcome to Expoge Multipurpose Agency Template. Learn About Us.';
-    $aboutText1 = 'Enim, luctus morbi, porta hymenaeos faucibus felis libero faucibus sapien tellus commodo praesent. Maecenas aptent netus cursus eget posue imperdiet eu odio odio non venenatis. Ut pulvinar aptent tellus sapien quis etiam. Cursus cubilia mi mollis primis placerat. Porta elit porttitor tincidunt condimentum, odio. Sem primis. Sit, eu dictum tempor venenatis placerat sem ligula metus pharetra vitae.';
-    $aboutText2 = 'Sapien. Vivamus elementum tristique, penatibus semper nunc nibh lectus vehicula faucibus molestie gravida nostra duis, lobortis inceptos commodo. Bibendu magnis est per per cum blandit volutpat dui dapibus et. Taciti nulla praesent nostra nascetur semper nisl turpis.';
-    $aboutReadMoreUrl = 'about.html';
+    // ================================
+    //   VARIABLES DE LA SECTION "QUI SOMMES-NOUS"
+    //      (Mise à jour pour QualiPro Plus)
+    // ================================
+    
+    // صورة تعكس الاحترافية في التدقيق والاستشارة
+    $aboutImg = asset('https://moodle.cfuv.ru/pluginfile.php/238972/course/overviewfiles/consulting.jpg'); 
+    
+    // عنوان ترحيبي يركز على الشراكة والتميز
+    $aboutTitle = 'Plus qu’un cabinet, nous sommes votre partenaire pour l’excellence.'; 
+    
+    // النص الأول: تعريف شامل بالهوية والهدف
+    $aboutText1 = 'Nous sommes un cabinet spécialisé dans l’accompagnement des entreprises pour l’obtention de certifications et la mise en conformité réglementaire. Notre objectif est d’optimiser vos processus et de valoriser vos performances de manière durable grâce à une expertise rigoureuse en qualité, sécurité et environnement.';
+    
+    // النص الثاني: المهمة الأساسية (Notre Mission)
+    $aboutText2 = 'Notre mission : Accompagner les entreprises vers la certification à travers la formation, la consultation et la mise en place des normes, tout en bâtissant une culture d’amélioration continue.';
+    
+    $aboutReadMoreUrl = '#about'; // رابط داخلي أو صفحة فرعية
+    $aboutReadMoreText = 'Découvrir Plus'; // نص الزر بشكل احترافي
 @endphp
 <section id="about" class="about-us-3 position-relative bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12 col-xl-5">
                 <div class="about-img-2 wow animated slideInRight animated">
-                    <img src="{{ $aboutImg }}" alt="image">
+                    <img src="{{ $aboutImg }}" alt="Notre Équipe de Consultants">
                 </div>
             </div>
             <div class="col-md-12 col-lg-12 col-xl-7">
@@ -25,7 +39,7 @@
                     <div class="about-area-2 bg-secondery d-flex color-white p-40 wow animated slideInUp animated">
                         <p>{{ $aboutText2 }}</p>
                     </div>
-                    <a class="btn btn-primary mt-30" href="{{ $aboutReadMoreUrl }}">Read More</a>
+                    <a class="btn btn-primary mt-30" href="{{ $aboutReadMoreUrl }}">{{ $aboutReadMoreText }}</a>
                 </div>
             </div>
         </div>

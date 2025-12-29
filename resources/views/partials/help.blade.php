@@ -1,30 +1,36 @@
 @php
-    $helpSubtitle = 'Who Helped Us';
-    $helpTitle = 'From Getting Started';
-    $helpDesc = 'Taciti ligula neque non nisi sapien sapien sociosqu proin fusce aptent sit amet tellus id. Dictum mattis nisl nullam ligula.';
+    // ================================
+    //        Testimonials Variables
+    //      (Mise à jour QualiPro Plus)
+    // ================================
+    $helpSubtitle = 'Témoignages';
+    $helpTitle = 'La Confiance de nos Partenaires';
+    $helpDesc = 'La satisfaction de nuestros clients est au cœur de notre action. Découvrez comment nous accompagnons les entreprises vers l’excellence et la certification durable.';
+
     $helpTestimonials = [
         [
-            'name' => 'Alex Fernandize',
-            'text' => 'Dolor ad maecenas est pulvinar massa lorem nascetur pede iaculis torquent id velit Hendrerit fermentum venenatis.',
+            'name' => 'Directeur Qualité',
+            'text' => 'Un accompagnement exceptionnel pour notre certification ISO 22000. L’expertise technique et la rigueur de QualiPro Plus ont été déterminantes pour optimiser nos processus.',
             'img' => asset('assets/images/testimonial/1.jpg'),
         ],
         [
-            'name' => 'Sherica Kate',
-            'text' => 'Dolor ad maecenas est pulvinar massa lorem nascetur pede iaculis torquent id velit Hendrerit fermentum venenatis.',
+            'name' => 'Responsable HSE',
+            'text' => 'Grâce aux audits à blanc et aux formations sur mesure, nous avons abordé notre audit de certification avec sérénité et professionnalisme.',
             'img' => asset('assets/images/testimonial/2.jpg'),
         ],
         [
-            'name' => 'Ronaldo Sean',
-            'text' => 'Dolor ad maecenas est pulvinar massa lorem nascetur pede iaculis torquent id velit Hendrerit fermentum venenatis.',
+            'name' => 'Gérant Industrie Agro',
+            'text' => 'Une équipe intègre et engagée. Leur maîtrise des normes HACCP et FSSC nous a permis de renforcer la sécurité alimentaire de nos produits durablement.',
             'img' => asset('assets/images/testimonial/3.jpg'),
         ],
         [
-            'name' => 'Ronaldo Sean',
-            'text' => 'Dolor ad maecenas est pulvinar massa lorem nascetur pede iaculis torquent id velit Hendrerit fermentum venenatis.',
+            'name' => 'Chef de Projet',
+            'text' => 'Plus qu’un simple consultant, un véritable partenaire stratégique. Leur approche basée sur la valeur ajoutée a transformé notre culture d’organisation.',
             'img' => asset('assets/images/testimonial/4.jpg'),
         ],
     ];
 @endphp
+
 <section id="helped" class="bg-light">
     <div class="container">
         <div class="row">

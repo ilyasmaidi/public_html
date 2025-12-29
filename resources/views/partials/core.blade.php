@@ -1,15 +1,48 @@
 @php
-    $coreImg = asset('assets/images/others/2.png');
-    $coreSubtitle = 'Our Core Value is Our Foundation';
-    $coreTitle = 'Most Valuable Purposes';
-    $coreDesc = 'Sagittis tempor, ultricies conubia, ultrices in, nisl diam natoque non blandit ornare est cubilia quis. Ridiculus, euismod. Mollis. Pretium hendrerit cum porta, vulputate hac. Nascetur suscipit consectetuer eget. Cursus nonummy.';
+    // ================================
+    //    VARIABLES DE LA SECTION VALEURS
+    //     (Mise à jour QualiPro Plus)
+    // ================================
+
+    $coreImg = asset('https://cdn.bcs-express.ru/article-head/7180.jpg');
+
+    // 33 caractères (Max)
+    $coreSubtitle = 'Nos Valeurs Fondent Notre Succès';
+
+    // 21 caractères (Max)
+    $coreTitle = 'Valeurs Essentielles';
+
+    // 200 caractères (Max)
+    $coreDesc = 'Nous plaçons l’éthique et la satisfaction client au cœur de notre action. À travers le partage et l’engagement, nous créons une valeur ajoutée durable pour votre organisation.';
+
     $coreItems = [
-        ['title' => 'Find Poor Children', 'desc' => 'Cras vehicula lacus ipsum vivamus. Tempus eleme inceptos sapien.'],
-        ['title' => 'Food for Homeless', 'desc' => 'Cras vehicula lacus ipsum vivamus. Tempus eleme inceptos sapien.'],
-        ['title' => 'Learning Advantage', 'desc' => 'Cras vehicula lacus ipsum vivamus. Tempus eleme inceptos sapien.'],
-        ['title' => 'Home for Orphan', 'desc' => 'Cras vehicula lacus ipsum vivamus. Tempus eleme inceptos sapien.'],
+        [
+            // 19 caractères (Max)
+            'title' => 'Satisfaction Client',
+            // 63 caractères (Max)
+            'desc' => 'Des relations durables basées sur la confiance et l’écoute.'
+        ],
+        [
+            // 17 caractères (Max)
+            'title' => 'Éthique & Rigueur',
+            // 63 caractères (Max)
+            'desc' => 'Intégrité et équité en respectant les principes du conseil.'
+        ],
+        [
+            // 18 caractères (Max)
+            'title' => 'Esprit d’Équipe',
+            // 63 caractères (Max)
+            'desc' => 'Travail collaboratif et partage pour le développement de tous.'
+        ],
+        [
+            // 17 caractères (Max)
+            'title' => 'Valeur Ajoutée',
+            // 63 caractères (Max)
+            'desc' => 'Engagement passionné visant à générer une réelle performance.'
+        ],
     ];
 @endphp
+
 <section class="core-value position-relative">
     <div class="container">
         <div class="row">

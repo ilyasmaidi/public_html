@@ -1,10 +1,21 @@
 @php
+    // ================================
+    //    SECTION "APPEL À L'ACTION"
+    //     (Mise à jour QualiPro Plus)
+    // ================================
+
     $offerBg = asset('assets/images/others/3.jpg');
-    $offerTitle = 'Become A Volunteer';
-    $offerText = 'Dictumst vulputate non sem mi condimentum et. Enim, luctus rutrum facilisis justo ut rutrum, senectus.';
-    $offerSignInUrl = '#';
-    $offerSignInText = 'Sign In';
+
+    // عنوان يركز على الشراكة نحو التميز
+    $offerTitle = 'Votre Partenaire vers la Certification'; //
+    
+    // نص يدعو الشركات لاتخاذ خطوة نحو التطوير المستدام
+    $offerText = 'Faites le premier pas vers l’excellence opérationnelle. Nos experts vous accompagnent dans chaque étape de votre démarche de certification et d’amélioration continue.'; //
+
+    $offerSignInUrl = '/contactez-nous'; // رابط صفحة الاتصال
+    $offerSignInText = 'Demander un Devis'; // استبدال 'Join Now' بطلب عرض سعر مهني
 @endphp
+
 <div class="connect-us position-relative py-80 overlay-secondery" style="background: url({{ $offerBg ?? '' }}) no-repeat fixed top center/cover;">
     <div class="container">
         <div class="row">

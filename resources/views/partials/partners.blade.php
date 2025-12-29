@@ -1,15 +1,28 @@
 @php
-    $partnersSubtitle = 'Our Valuable Partners';
-    $partnersTitle = 'Fellows We Have';
-    $partnersDesc = 'Potenti platea, neque senectus hac elit suspendisse imperdiet ultrices tincidunt vel sodales. Imperdiet euismod.';
+    // ================================
+    //    VARIABLES DE LA SECTION PARTENAIRES
+    //      (Mise à jour QualiPro Plus)
+    // ================================
+
+    // 27 caractères (Max)
+    $partnersSubtitle = 'Ils Nous Font Confiance';
+
+    // 24 caractères (Max)
+    $partnersTitle = 'Nos Partenaires & Clients';
+
+    // 200 caractères (Max)
+    $partnersDesc = 'Nous collaborons avec des entreprises de divers secteurs (agroalimentaire, pharmaceutique, cosmétique) pour bâtir des démarches d’amélioration continue et garantir leur conformité aux normes.';
+
+    // أيقونات تمثل القطاعات التي تخدمونها بدلاً من أيقونات تقنية عامة
     $partnersIcons = [
-        'flaticon-envato',
-        'flaticon-themeforest',
-        'flaticon-codecanyon',
-        'flaticon-graphicriver',
-        'flaticon-audiojungle',
+        'flaticon-industrial',     // القطاع الصناعي
+        'flaticon-laboratory',     // القطاع الصيدلاني والطبي
+        'flaticon-safety',         // قطاع الصحة والسلامة
+        'flaticon-ecology',        // قطاع البيئة
+        'flaticon-hospitality',    // قطاع التغذية والخدمات
     ];
 @endphp
+
 <div class="our-partners-two bg-gray position-relative py-80">
     <div class="container">
         <div class="row align-items-center">
@@ -20,13 +33,7 @@
                     <p>{{ $partnersDesc ?? '' }}</p>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-7">
-                <div class="owl-carousel slide-4 owl-dots-none flat-big icon-secondery text-center">
-                    @foreach($partnersIcons as $icon)
-                        <i class="{{ $icon ?? '' }}"></i>
-                    @endforeach
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>

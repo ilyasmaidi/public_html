@@ -1,41 +1,53 @@
 @php
-    $footerLogo = asset('assets/images/logo/logo-white.png');
-    $footerText = 'Posuere nam natoque nec rhoncus malesuad phasel ante. Enim lacinia cubilia mat quam place.';
+    // ================================
+    //    VARIABLES DU FOOTER
+    //  (Mise à jour Finale QualiPro Plus)
+    // ================================
+
+    $footerLogo = asset('assets/images/logo/logo-qualipro.png');
+
+    // نص تعريفي يركز على المهمة والشراكة
+    $footerText = 'Plus qu’un cabinet, nous sommes votre partenaire pour l’excellence. Nous accompagnons les entreprises vers la certification et la conformité réglementaire durable.';
+
     $footerContacts = [
-        ['icon' => 'fa fa-phone', 'text' => '(012) 345 657 900'],
-        ['icon' => 'fa fa-envelope', 'text' => 'info@yourdomain.com'],
-        ['icon' => 'fa fa-skype', 'text' => 'Expoge.multipurpose'],
-        ['icon' => 'fa fa-map-marker', 'text' => '40 Towerhill Avenue, Melbourne, Australia.'],
+        ['icon' => 'fa fa-phone', 'text' => '0699 75 80 30 / 0776 70 75 80'],
+        ['icon' => 'fa fa-envelope', 'text' => 'qualiproplus16@gmail.com'],
+        ['icon' => 'fa fa-map-marker', 'text' => 'Alger, Algérie'], // الموقع بناءً على رمز الهاتف والبريد
     ];
+
     $footerNews = [
-        ['url' => '#', 'title' => 'Integer magnis vivam phasel. Lacus porttitor vestibulum ligula auctor.', 'date' => '25 January 2020'],
-        ['url' => '#', 'title' => 'Rhonc maecen aliqu varius conubia nullam hymenaeos rhoncus.', 'date' => '25 January 2020'],
-        ['url' => '#', 'title' => 'Quisque tellus erat tortor elementu aenean litora.', 'date' => '22 January 2020'],
+        ['url' => 'https://www.linkedin.com/posts/qualipro-plus_proc%C3%A9dure-vs-processus-activity-7400979297156370432-YxlU', 'title' => 'Comprendre la différence entre Procédure vs Processus.', 'date' => '12 Nov 2025'],
+        ['url' => '#', 'title' => 'Comment réussir votre audit de certification ISO 22000.', 'date' => 'Nov 2025'],
+        ['url' => '#', 'title' => 'Les avantages de la démarche HACCP en agroalimentaire.', 'date' => 'Oct 2025'],
     ];
+
     $footerLinks = [
-        ['url' => '#', 'label' => 'Our Services'],
-        ['url' => '#', 'label' => 'How It Work'],
-        ['url' => '#', 'label' => 'FAQ'],
-        ['url' => '#', 'label' => 'Help'],
-        ['url' => '#', 'label' => 'Free Consultation'],
-        ['url' => '#', 'label' => 'Mission and Vision'],
-        ['url' => '#', 'label' => 'Account Settings'],
-        ['url' => '#', 'label' => 'License'],
+        ['url' => '#services', 'label' => 'Nos Domaines de Compétence'],
+        ['url' => '#about', 'label' => 'Qui sommes-nous ?'],
+        ['url' => '#values', 'label' => 'Nos Valeurs'],
+        ['url' => '#', 'label' => 'Formation et Coaching'],
+        ['url' => '#', 'label' => 'Audits et Diagnostics'],
+        ['url' => '#', 'label' => 'Certification ISO'],
+        ['url' => '#', 'label' => 'Conseil Stratégique'],
+        ['url' => '#', 'label' => 'HACCP & Sécurité Aliments'],
     ];
-    $footerSubscribeText = 'Dictum velit cum arcu interd faucib urna inceptos imperdiet dignissim.';
+
+    $footerSubscribeText = 'Restez informé de nos dernières actualités et conseils sur les normes et la performance durable.';
+
     $footerSocial = [
-        ['icon' => 'fa fa-facebook', 'url' => '#'],
-        ['icon' => 'fa fa-twitter', 'url' => '#'],
-        ['icon' => 'fa fa-linkedin', 'url' => '#'],
-        ['icon' => 'fa fa-instagram', 'url' => '#'],
-        ['icon' => 'fa fa-dribbble', 'url' => '#'],
+        ['icon' => 'fa fa-facebook', 'url' => 'https://www.facebook.com/share/17Sx6r89As/'],
+        ['icon' => 'fa fa-linkedin', 'url' => 'https://www.linkedin.com/company/qualipro-plus/'],
+        ['icon' => 'fa fa-instagram', 'url' => 'https://www.instagram.com/quali_proplus'],
     ];
-    $footerCopyright = 'Expoge @ 2020. All Right Reserved.';
+
+    $footerCopyright = 'QualiPro Plus @ 2025. Tous droits réservés.';
+
     $footerCopyrightLinks = [
-        ['url' => '#', 'label' => 'Privacy Policy'],
-        ['url' => '#', 'label' => 'Terms & Conditions'],
+        ['url' => '#', 'label' => 'Politique de Confidentialité'],
+        ['url' => '#', 'label' => 'Conditions Générales'],
     ];
 @endphp
+
 <footer class="bg-secondery">
     <div class="container">
         <div class="row py-80">

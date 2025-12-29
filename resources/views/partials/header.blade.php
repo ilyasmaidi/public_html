@@ -1,38 +1,35 @@
 @php
     // ================================
-    //        HEADER VARIABLES
-    //  (تعديل الروابط هنا لاحقاً بسهولة)
+    //         HEADER VARIABLES
+    //  (Mise à jour pour QualiPro Plus)
     // ================================
-    $phone = "(012) 345 657 900";
-    $email = "support@yourdomain.com";
+    $phone = "+213 699 75 80 30"; // الرقم الأول الأساسي
+    $email = "qualiproplus16@gmail.com"; // البريد الإلكتروني الرسمي
 
-    // روابط كنصوص — لا تنشئ روت داخل الكود
-    // يمكنك لاحقاً استبدال '/volunteer' بـ route('volunteer') عند الحاجة
-    $volunteer_link = '/volunteer';
-    $contact_link   = '/contact';
-    $login_link     = '/login';
-    $signup_link    = '/signup';
+    // Liens en français (الروابط)
+    $volunteer_link = '/demander-devis'; 
+    $contact_link   = '/contactez-nous';
+    $login_link     = '/connexion';
+    $signup_link    = '/inscription';
     $home_link      = '/';
 
-    // مسار الشعار (asset صالح)
-    $logo = asset('assets/images/logo/logo.png');
+    // Chemin du logo (تحقق من مسار شعار QualiPro Plus)
+    $logo = asset('assets/images/logo/logo-qualipro.png'); 
 
-    // Achievements
+    // Achievements (إحصائيات تعكس مهارات التدقيق والتكوين)
     $achievements = [
-        ['count' => 2653, 'title' => 'Orphan Children'],
-        ['count' => 1449, 'title' => 'Educating Now'],
-        ['count' => 836,  'title' => 'Feeding Everyday'],
+        ['count' => '100%', 'title' => 'Satisfaction Client'], // قيمة أساسية للمؤسسة
+        ['count' => 10,  'title' => 'Normes Maîtrisées'], // تغطية ISO 9001, 22000, 14001.. إلخ
+        ['count' => 4,   'title' => 'Types d\'Audits'], // أنواع التدقيق الأربعة المذكورة
     ];
 
-    // Navigation Links as plain strings (لا روت هنا)
+    // Navigation Links (روابط التنقل بناءً على الأقسام الجديدة)
     $nav_links = [
-        ['title' => 'Home', 'link' => '#top'],
-        ['title' => 'About', 'link' => '#about'],
-        ['title' => 'Causes', 'link' => '#causes'],
-        ['title' => 'Portfolio', 'link' => '#portfolio'],
-        ['title' => 'Team', 'link' => '#team'],
-        ['title' => 'Blog', 'link' => '#blog'],
-        ['title' => 'Contact', 'link' => $contact_link],
+        ['title' => 'Accueil', 'link' => '#top'],
+        ['title' => 'Qui sommes-nous', 'link' => '#about'], // من نحن
+        ['title' => 'Compétences', 'link' => '#services'], // مجالات الكفاءة
+        ['title' => 'Nos Valeurs', 'link' => '#values'], // القيم (التي تم التأكيد عليها في الصورة)
+        ['title' => 'Contact', 'link' => '#contact'],
     ];
 @endphp
 
@@ -124,7 +121,7 @@
                     </ul>
 
                     <ul class="ml-auto nav-right-part">
-                        <li><a class="quote-btn btn-primary" href="#">Donate Now</a></li>
+                        <li><a class="quote-btn btn-primary" href="#">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>

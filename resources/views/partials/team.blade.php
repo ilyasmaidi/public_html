@@ -1,40 +1,46 @@
 @php
-    $teamSubtitle = 'Success with us';
-    $teamTitle = 'Our Team';
-    $teamDesc = 'Taciti ligula neque non nisi sapien sapien sociosqu proin fusce aptent sit amet tellus id. Dictum mattis nisl nullam ligula.';
+    // ================================
+    //            Variables de l'Équipe
+    // ================================
+    $teamSubtitle = 'Réussir Avec Nous';
+    $teamTitle = "Notre Équipe Professionnelle";
+    $teamDesc = "Nous sommes fiers de nos experts dévoués qui travaillent ensemble pour fournir des résultats exceptionnels. Chaque membre apporte expérience précieuse, innovation et professionnalisme à chaque projet que nous gérons.";
+
     $teamMembers = [
         [
             'img' => asset('assets/images/team/1.jpg'),
-            'name' => 'Aristay Willam',
-            'role' => 'Founder',
+            'name' => 'Aristay William',
+            'role' => 'Fondateur & PDG',
             'link' => '#',
         ],
         [
             'img' => asset('assets/images/team/2.jpg'),
             'name' => 'Sophie Lily',
-            'role' => 'Assistan Manager',
+            'role' => 'Assistante Manager',
             'link' => '#',
         ],
         [
             'img' => asset('assets/images/team/3.jpg'),
             'name' => 'Harrison Ryan',
-            'role' => 'Project Manager',
+            'role' => 'Chef de Projet',
             'link' => '#',
         ],
         [
             'img' => asset('assets/images/team/4.jpg'),
-            'name' => 'Sophie Lily',
-            'role' => 'Consultant',
+            'name' => 'Emily Carter',
+            'role' => 'Consultante en Affaires',
             'link' => '#',
         ],
         [
             'img' => asset('assets/images/team/5.jpg'),
             'name' => 'Chloe Ava',
-            'role' => 'Consultant',
+            'role' => 'Consultante Marketing',
             'link' => '#',
         ],
     ];
 @endphp
+
+
 <section id="team">
     <div class="container">
         <div class="row">

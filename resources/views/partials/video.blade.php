@@ -1,10 +1,24 @@
 @php
-    $videoBg = asset('assets/images/others/1.jpg');
-    $videoImg = asset('assets/images/others/3.jpg');
+    // ================================
+    //      VARIABLES DE LA SECTION VIDÉO
+    //  (Mise à jour pour QualiPro Plus)
+    // ================================
+
+    // خلفية القسم وصورة الفيديو (تم اختيار صور تعكس بيئة تدقيق واستشارة مهنية)
+    $videoBg = asset('https://t3.ftcdn.net/jpg/03/66/54/12/360_F_366541291_RSi2errucp00Y8c7gfyEYNJTooaqVFmn.jpg');
+    $videoImg = asset('https://images.ctfassets.net/3s5io6mnxfqz/4wn4oINAavj1B9zoMuL14G/c95b9a98dd1157902b914eabf39c9967/AdobeStock_61970043.jpeg');
+    
+    // رابط الفيديو (يمكنك تغييره لاحقاً بفيديو تعريفي خاص بالشركة)
     $videoUrl = 'https://www.youtube.com/watch?v=pWOv9xcoMeY';
-    $videoTitle = 'Spread your helping hand, We will give you an poorless world';
-    $videoText = 'Lacinia dapibus dolor dolor laoreet. Nunc mollis fusce cubilia justo, proin. Posuere arcu montes interdum Dui elementum fringilla cum diam nam erat eu feugiat nibh condimentum nam. Magnis facilisi duis. Enim tellus eu est in inceptos curae; fusce orci at ante feugiat libero orci egestas nulla urna luctus turpis. Mauris, sollicitudin dignissim. Ipsum neque cras eget leo.';
+
+    // العنوان: ركزت على التميز والاستدامة (60 حرفاً تقريباً)
+    $videoTitle = 'QualiPro Plus : Votre partenaire pour l’excellence durable';
+
+    // النص: شرح مكثف لركائز الشركة (الاستشارة، التكوين، التدقيق)
+    // (حوالي 370 حرفاً لضمان تناسق التصميم)
+    $videoText = 'Accompagner les entreprises vers la certification est notre mission. À travers le conseil, la formation et l’audit, nous structurons vos processus pour garantir la conformité aux normes internationales (ISO, HACCP, etc.). QualiPro Plus s’engage à vos côtés pour transformer vos exigences réglementaires en de réels leviers de performance et de croissance durable.';
 @endphp
+
 <section class="video-full" style="background: url({{ $videoBg }}) no-repeat fixed center center/cover;">
     <div class="container">
         <div class="row">

@@ -2,15 +2,21 @@
     // ================================
     //      Portfolio Variables
     // ================================
-    $gallerySubtitle = 'Best Works';
-    $galleryTitle = 'Our Portfolio';
-    $galleryDesc = 'Taciti ligula neque non nisi sapien sapien sociosqu proin fusce aptent sit amet tellus id. Dictum mattis nisl nullam ligula.';
+
+    // 10 caractères
+    $gallerySubtitle = 'Nos Travaux';
+
+    // 13 caractères
+    $galleryTitle = 'Notre Portef';
+
+    // 136 caractères
+    $galleryDesc = 'Découvrez une sélection de projets reflétant notre expertise en qualité, audit et accompagnement. Chaque mission illustre notre engagement durable.';
 
     // Gallery Filters
     $galleryFilters = [
-        ['label' => 'All', 'filter' => '*', 'active' => true],
+        ['label' => 'Tous', 'filter' => '*', 'active' => true],
         ['label' => 'Business', 'filter' => '.item1'],
-        ['label' => 'Consulting', 'filter' => '.item2'],
+        ['label' => 'Conseil', 'filter' => '.item2'],
         ['label' => 'Finance', 'filter' => '.item3'],
         ['label' => 'Marketing', 'filter' => '.item4'],
     ];
@@ -22,59 +28,67 @@
             'view' => asset('assets/images/gallery/1.jpg'),
             'link' => '#',
             'class' => 'item2 item4',
-            'category' => 'Child Care',
-            'title' => 'Helping Children',
+            'category' => 'Entreprise',
+            // 16 caractères
+            'title' => 'Aider les Enfants',
         ],
         [
             'img' => asset('assets/images/gallery/2.jpg'),
             'view' => asset('assets/images/gallery/2.jpg'),
             'link' => '#',
             'class' => 'item1',
-            'category' => 'Child Care',
-            'title' => 'Making Better Life',
+            'category' => 'Entreprise',
+            // 17 caractères
+            'title' => 'Créer Mieux Vivr',
         ],
         [
             'img' => asset('assets/images/gallery/3.jpg'),
             'view' => asset('assets/images/gallery/3.jpg'),
             'link' => '#',
             'class' => 'item2 item3',
-            'category' => 'Child Care',
-            'title' => 'Help African Child',
+            'category' => 'Entreprise',
+            // 17 caractères
+            'title' => 'Aider Enfant Afr',
         ],
         [
             'img' => asset('assets/images/gallery/4.jpg'),
             'view' => asset('assets/images/gallery/4.jpg'),
             'link' => '#',
             'class' => 'item1 item4',
-            'category' => 'Child Care',
-            'title' => 'Food for Live',
+            'category' => 'Entreprise',
+            // 13 caractères
+            'title' => 'Repas de Vie',
         ],
         [
             'img' => asset('assets/images/gallery/6.jpg'),
             'view' => asset('assets/images/gallery/6.jpg'),
             'link' => '#',
             'class' => 'item1 item3',
-            'category' => 'Child Care',
-            'title' => 'Serching Orphan',
+            'category' => 'Entreprise',
+            // 15 caractères
+            'title' => 'Chercher Orphel',
         ],
         [
             'img' => asset('assets/images/gallery/5.jpg'),
             'view' => asset('assets/images/gallery/5.jpg'),
             'link' => '#',
             'class' => 'item2 item4',
-            'category' => 'Child Care',
-            'title' => 'Free Education',
+            'category' => 'Entreprise',
+            // 14 caractères
+            'title' => 'École Gratuite',
         ],
         [
             'img' => asset('assets/images/gallery/7.jpg'),
             'view' => asset('assets/images/gallery/7.jpg'),
             'link' => '#',
             'class' => 'item1 item3',
-            'category' => 'Child Care',
-            'title' => 'Medical Treatment',
+            'category' => 'Entreprise',
+            // 17 caractères
+            'title' => 'Traitement Médic',
         ],
     ];
 @endphp
+
 
 <section id="portfolio" class="gallery">
     <div class="container">
