@@ -1,0 +1,61 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav" style="font-family: 'Poppins', sans-serif;">
+    <li class="nav-item nav-profile">
+      <a href="#" class="nav-link">
+        <div class="nav-profile-image">
+          <img src="{{ asset('bigdash/assets/images/faces/face1.jpg') }}" alt="profile">
+          <span class="login-status online"></span>
+        </div>
+        <div class="nav-profile-text d-flex flex-column ms-3">
+          <span class="font-weight-bold mb-2">Administrateur</span>
+          <span class="text-secondary text-small">Gestion du site</span>
+        </div>
+      </a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.dashboard') }}">
+        <span class="menu-title">Tableau de Bord</span>
+        <i class="mdi mdi-home menu-icon text-primary"></i>
+      </a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('admin.settings') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.settings') }}">
+        <span class="menu-title">Paramètres Généraux</span>
+        <i class="mdi mdi-settings menu-icon text-danger"></i>
+      </a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('admin.nav-links') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.nav-links') }}">
+        <span class="menu-title">Menu Navigation</span>
+        <i class="mdi mdi-link-variant menu-icon text-info"></i>
+      </a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('admin.achievements') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.achievements') }}">
+        <span class="menu-title">Réalisations</span>
+        <i class="mdi mdi-trophy menu-icon text-warning"></i>
+      </a>
+    </li>
+    <li class="nav-item {{ request()->routeIs('admin.sliders.index') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.sliders.index') }}">
+        <span class="menu-title">Gestion du Slider</span>
+        <i class="mdi mdi-image-multiple menu-icon text-success"></i>
+      </a>
+    </li>
+
+    <li class="nav-item sidebar-actions">
+      <span class="nav-link">
+        <div class="border-bottom">
+          <h6 class="font-weight-normal mb-3 text-muted">Direct Link</h6>
+        </div>
+        <a href="{{ route('home') }}" target="_blank" class="btn btn-block btn-lg btn-gradient-primary mt-4">
+            <i class="mdi mdi-open-in-new"></i> Web Site
+        </a>
+      </span>
+    </li>
+  </ul>
+</nav>

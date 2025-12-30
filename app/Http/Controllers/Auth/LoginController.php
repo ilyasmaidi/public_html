@@ -8,21 +8,46 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    // عرض نموذج تسجيل الدخول
+    // Afficher la page de connexion
     public function showLogin()
     {
-        return view('auth.login'); // Blade: resources/views/auth/login.blade.php
+        return view('auth.login');
     }
 
-    // معالجة تسجيل الدخول
+    // Traitement de la connexion
     public function login(Request $request)
     {
-        $credentials = $request->only('email', 'password');
+        // Validation avec messages en français
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ], [
+            'email.required' => 'L\'adresse email est obligatoire.',
+            'email.email' => 'Veuillez entrer une adresse email valide.',
+            'password.required' => 'Le mot de passe est obligatoire.',
+        ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->route('home');
+            $request->session()->regenerate();
+
+            // Redirection vers le tableau de bord (URL française)
+            return redirect()->intended(route('admin.dashboard'))
+                             ->with('success', 'Bienvenue sur votre tableau de bord.');
         }
 
-        return redirect()->back()->with('error', 'بيانات الدخول غير صحيحة.');
+        // Erreur d'authentification en français
+        return back()->withErrors([
+            'email' => 'Les identifiants fournis ne correspondent pas à nos enregistrements.',
+        ])->onlyInput('email');
+    }
+
+    // Déconnexion
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        
+        return redirect('/')->with('success', 'Vous avez été déconnecté avec succès.');
     }
 }

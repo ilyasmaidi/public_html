@@ -4,7 +4,7 @@
     //  (Mise à jour Finale QualiPro Plus)
     // ================================
 
-    $footerLogo = asset('assets/images/logo/logo-qualipro.png');
+    $footerLogo = asset('assets/images/logo/logo.png');
 
     // نص تعريفي يركز على المهمة والشراكة
     $footerText = 'Plus qu’un cabinet, nous sommes votre partenaire pour l’excellence. Nous accompagnons les entreprises vers la certification et la conformité réglementaire durable.';

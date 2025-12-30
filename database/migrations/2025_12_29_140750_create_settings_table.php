@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
+            $table->string('key')->unique(); // مثال: site_phone, site_email
+            $table->text('value')->nullable();
+            $table->string('group')->default('general'); // لتصنيف الإعدادات (header, footer, links)
             $table->timestamps();
         });
     }

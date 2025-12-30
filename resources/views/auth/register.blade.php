@@ -3,38 +3,51 @@
 @section('title', 'Sign Up')
 
 @section('content')
-<!-- Start Signup Form -->
 <div class="signup position-relative bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0">
                 <div class="bg-white my-80 py-40 px-30 md-px-30 sm-px-15 sm-py-30 shadow-smooth-black-01">
                     
-                    <!-- Logo -->
                     <div class="form-logo text-center pb-50">
                         <img src="{{ asset('assets/images/S.png') }}" alt="logo-image">
                     </div>
 
                     <div class="row">
-                        <!-- Signup Form -->
                         <div class="col-md-12 col-lg-5">
-                            <form class="signup-form" action="{{ route('register') }}" method="POST">
+                            {{-- عرض أخطاء التحقق من البيانات إن وجدت --}}
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul class="mb-0">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+
+                            <form class="signup-form" action="{{ route('register.post') }}" method="POST">
                                 @csrf
                                 <h3 class="position-relative va-lb-line-w50-h2-primary pb-15 mb-30 color-secondery">Sign Up Now!</h3>
                                 
                                 <div class="row">
+                                    {{-- ملاحظة: تم تغيير username إلى name ليتوافق مع قاعدة البيانات --}}
                                     <div class="form-group col-md-12 col-lg-12">
-                                        <input type="text" name="username" class="form-control" placeholder="Username" value="{{ old('username') }}" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Full Name" value="{{ old('name') }}" required>
                                     </div>
+
                                     <div class="form-group col-md-12 col-lg-12">
                                         <input type="email" name="email" class="form-control" placeholder="Email Address" value="{{ old('email') }}" required>
                                     </div>
+
                                     <div class="form-group col-md-12 col-lg-12">
                                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                                     </div>
+
                                     <div class="form-group col-md-12 col-lg-12">
                                         <input type="password" name="password_confirmation" class="form-control" placeholder="Retype password" required>
                                     </div>
+
                                     <div class="col-lg-12">
                                         <button type="submit" class="btn btn-primary w-100">Sign Up</button>
                                     </div>
@@ -47,12 +60,10 @@
                             </div>
                         </div>
 
-                        <!-- Divider -->
                         <div class="col-md-12 col-lg-2 line-center">
                             <div class="xy-middle shadow or">Or</div>
                         </div>
 
-                        <!-- Social Login -->
                         <div class="col-md-12 col-lg-5">
                             <div class="y-middle w-100 lg-mt-30 lg-mb-30">
                                 <ul class="socal-signup mr-30 sm-mr-0">
@@ -63,7 +74,6 @@
                             </div>
                         </div>
 
-                        <!-- Footer Links -->
                         <div class="col-md-12 col-lg-12">
                             <div class="color-gray">
                                 <ul class="form-list mt-50 d-table mx-auto hover-primary">
@@ -77,12 +87,8 @@
                                 </ul>
                             </div>
                         </div>
-                    </div> <!-- End Row -->
-
-                </div> <!-- End White Box -->
-            </div>
+                    </div> </div> </div>
         </div>
     </div>
 </div>
-<!-- End Signup Form -->
 @endsection
