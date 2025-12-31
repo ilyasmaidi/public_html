@@ -18,18 +18,31 @@ class SliderController extends Controller
 
     // تحديث بيانات السلايد
     public function update(Request $request, $id)
-    {
-        $slider = Slider::findOrFail($id);
+{
+    $slider = Slider::findOrFail($id);
+    
+    // مصفوفة الحقول التي قد تحتوي على ملفات
+    $fileFields = ['image_file' => 'image', 'k1_file' => 'k1_img', 'k2_file' => 'k2_img', 'k3_file' => 'k3_img', 'f1_file' => 'f1_img', 'f2_file' => 'f2_img'];
 
-        $data = $request->validate([
-            'title_fr' => 'nullable|string',
-            'subtitle_fr' => 'nullable|string',
-            'description_fr' => 'nullable|string',
-            'image' => 'nullable|string',
-        ]);
-
-        $slider->update($data);
-
-        return redirect()->back()->with('success', 'Le slide a été mis à jour avec succès !');
+    foreach ($fileFields as $input => $column) {
+        if ($request->hasFile($input)) {
+            // حذف الملف القديم
+            if ($slider->$column && file_exists(public_path($slider->$column))) {
+                @unlink(public_path($slider->$column));
+            }
+            // رفع الملف الجديد
+            $file = $request->file($input);
+            $path = 'uploads/sliders/' . time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('uploads/sliders'), $path);
+            $slider->$column = $path;
+        }
     }
+
+    $slider->title_fr = $request->title_fr;
+    $slider->subtitle_fr = $request->subtitle_fr;
+    $slider->description_fr = $request->description_fr;
+    $slider->save();
+
+    return back()->with('success', 'Mise à jour réussie !');
+}
 }
