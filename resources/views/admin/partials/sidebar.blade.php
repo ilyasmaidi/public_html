@@ -53,6 +53,12 @@
         <i class="mdi mdi-account-group menu-icon text-secondary"></i>
       </a>
     </li>
+    <li class="nav-item {{ request()->routeIs('admin.video.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.video.index') }}">
+        <span class="menu-title">Section Vidéo</span>
+        <i class="mdi mdi-video menu-icon text-dark"></i>
+      </a>
+    </li>
 
     <li class="nav-item sidebar-actions">
       <span class="nav-link">

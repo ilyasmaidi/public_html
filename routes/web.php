@@ -8,6 +8,8 @@ use App\Http\Controllers\SoulContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\VideoSectionController;
+
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
@@ -59,7 +61,10 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::put('sliders/{id}', [SliderController::class, 'update'])->name('sliders.update');
 
     Route::get('/about', [AboutController::class, 'index'])->name('about.index');
-    Route::put('/about/update', [AboutController::class, 'update'])->name('about.update');   
+    Route::put('/about/update', [AboutController::class, 'update'])->name('about.update');
+
+    Route::get('/video', [VideoSectionController::class, 'index'])->name('video.index');
+    Route::put('/video/update', [VideoSectionController::class, 'update'])->name('video.update');
 });
 
 
