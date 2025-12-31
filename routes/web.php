@@ -9,7 +9,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\VideoSectionController;
-
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\CoreValueController;
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
@@ -65,6 +66,21 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
     Route::get('/video', [VideoSectionController::class, 'index'])->name('video.index');
     Route::put('/video/update', [VideoSectionController::class, 'update'])->name('video.update');
+
+    Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
+    Route::post('/services/store', [ServiceController::class, 'store'])->name('services.store');
+    
+    // حذف الخدمة
+    Route::delete('/services/delete/{id}', [ServiceController::class, 'destroy'])->name('services.destroy');
+
+
+
+    
+
+Route::get('/core-values', [CoreValueController::class, 'index'])->name('core_values.index');
+Route::put('/core-values/settings', [CoreValueController::class, 'updateSettings'])->name('core_values.update_settings');
+Route::post('/core-values/item', [CoreValueController::class, 'storeItem'])->name('core_values.store_item');
+Route::delete('/core-values/item/{id}', [CoreValueController::class, 'destroyItem'])->name('core_values.destroy_item');
 });
 
 

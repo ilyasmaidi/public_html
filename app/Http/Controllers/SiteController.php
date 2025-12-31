@@ -23,7 +23,10 @@ class SiteController extends Controller
         $sliders = \App\Models\Slider::orderBy('order', 'asc')->get();
         $about = \App\Models\About::first();
         $video   = VideoSection::first();
+        $services = \App\Models\Service::orderBy('order')->get();
+        $coreSettings = \App\Models\CoreValue::first();
+        $coreItems = \App\Models\CoreValueItem::all();
 
-        return view('home', compact('settings', 'achievements', 'nav_links','sliders', 'about', 'video'));
+        return view('home', compact('settings', 'achievements', 'nav_links','sliders', 'about', 'video', 'services', 'coreSettings', 'coreItems'));
     }
 }

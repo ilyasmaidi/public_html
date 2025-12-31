@@ -59,6 +59,19 @@
         <i class="mdi mdi-video menu-icon text-dark"></i>
       </a>
     </li>
+    <li class="nav-item {{ request()->routeIs('admin.services.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.services.index') }}">
+        <span class="menu-title">Section Services</span>
+        <i class="mdi mdi-briefcase menu-icon text-primary"></i>
+      </a>
+    </li>
+    <li class="nav-item {{ request()->routeIs('admin.core_values.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.core_values.index') }}">
+        <span class="menu-title">Valeurs Fondamentales</span>
+        <i class="mdi mdi-star-circle menu-icon text-warning"></i>  
+      </a>
+    </li>
+    
 
     <li class="nav-item sidebar-actions">
       <span class="nav-link">
