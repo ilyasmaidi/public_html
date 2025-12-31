@@ -20,7 +20,8 @@ class SiteController extends Controller
         // جلب روابط التنقل النشطة
         $nav_links = NavLink::where('is_active', true)->orderBy('position')->get();
         $sliders = \App\Models\Slider::orderBy('order', 'asc')->get();
+        $about = \App\Models\About::first();
 
-        return view('home', compact('settings', 'achievements', 'nav_links','sliders'));
+        return view('home', compact('settings', 'achievements', 'nav_links','sliders', 'about'));
     }
 }

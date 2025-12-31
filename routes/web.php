@@ -7,8 +7,8 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\SoulContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\AboutController;
 
-// --- Frontend (Site Principal) ---
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
 Route::get('/a-propos', fn() => view('AboutUs'))->name('AboutUs');
@@ -57,4 +57,10 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
     Route::get('sliders', [SliderController::class, 'index'])->name('sliders.index');
     Route::put('sliders/{id}', [SliderController::class, 'update'])->name('sliders.update');
+
+    Route::get('/about', [AboutController::class, 'index'])->name('about.index');
+    Route::put('/about/update', [AboutController::class, 'update'])->name('about.update');   
 });
+
+
+

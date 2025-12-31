@@ -46,11 +46,18 @@
         <i class="mdi mdi-image-multiple menu-icon text-success"></i>
       </a>
     </li>
+    
+    <li class="nav-item {{ request()->routeIs('admin.about.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.about.index') }}">
+        <span class="menu-title">Section Qui Sommes-Nous</span>
+        <i class="mdi mdi-account-group menu-icon text-secondary"></i>
+      </a>
+    </li>
 
     <li class="nav-item sidebar-actions">
       <span class="nav-link">
         <div class="border-bottom">
-          <h6 class="font-weight-normal mb-3 text-muted">Direct Link</h6>
+          <h6 class="font-weight-normal mb-3 text-muted">2026 - 2031</h6>
         </div>
         <a href="{{ route('home') }}" target="_blank" class="btn btn-block btn-lg btn-gradient-primary mt-4">
             <i class="mdi mdi-open-in-new"></i> Web Site
@@ -58,4 +65,7 @@
       </span>
     </li>
   </ul>
+
+
+  
 </nav>
