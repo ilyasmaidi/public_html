@@ -23,7 +23,7 @@
     <li class="nav-item {{ request()->routeIs('admin.settings') ? 'active' : '' }}">
       <a class="nav-link" href="{{ route('admin.settings') }}">
         <span class="menu-title">Paramètres Généraux</span>
-        <i class="mdi mdi-settings menu-icon text-danger"></i>
+        <i class="mdi mdi-cog menu-icon text-danger"></i>
       </a>
     </li>
 
@@ -49,7 +49,7 @@
     
     <li class="nav-item {{ request()->routeIs('admin.about.*') ? 'active' : '' }}">
       <a class="nav-link" href="{{ route('admin.about.index') }}">
-        <span class="menu-title">Section Qui Sommes-Nous</span>
+        <span class="menu-title">Sommes-Nous</span>
         <i class="mdi mdi-account-group menu-icon text-secondary"></i>
       </a>
     </li>
@@ -71,7 +71,18 @@
         <i class="mdi mdi-star-circle menu-icon text-warning"></i>  
       </a>
     </li>
-    
+    <li class="nav-item {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.testimonials.index') }}">
+        <span class="menu-title">Témoignages Clients</span>
+        <i class="mdi mdi-comment-account menu-icon text-success"></i>
+      </a>
+    </li>
+    <li class="nav-item {{ request()->routeIs('admin.partners.*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.partners.index') }}">
+        <span class="menu-title">Partenaires</span>
+        <i class="mdi mdi-handshake menu-icon text-info"></i>
+      </a>
+    </li>
 
     <li class="nav-item sidebar-actions">
       <span class="nav-link">

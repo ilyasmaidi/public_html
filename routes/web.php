@@ -11,6 +11,12 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\VideoSectionController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\CoreValueController;
+use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\Admin\OfferController;
+use App\Http\Controllers\Admin\PartnerController;
+
+
+
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
@@ -81,6 +87,23 @@ Route::get('/core-values', [CoreValueController::class, 'index'])->name('core_va
 Route::put('/core-values/settings', [CoreValueController::class, 'updateSettings'])->name('core_values.update_settings');
 Route::post('/core-values/item', [CoreValueController::class, 'storeItem'])->name('core_values.store_item');
 Route::delete('/core-values/item/{id}', [CoreValueController::class, 'destroyItem'])->name('core_values.destroy_item');
+
+
+
+
+Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
+Route::put('/testimonials/settings', [TestimonialController::class, 'updateSettings'])->name('testimonials.update_settings');
+Route::post('/testimonials/item', [TestimonialController::class, 'storeItem'])->name('testimonials.store_item');
+Route::delete('/testimonials/item/{id}', [TestimonialController::class, 'destroyItem'])->name('testimonials.destroy_item');
+
+
+Route::get('/offer', [OfferController::class, 'index'])->name('offer.index');
+Route::put('/offer/update', [OfferController::class, 'update'])->name('offer.update');
+
+
+Route::get('/partners', [PartnerController::class, 'index'])->name('partners.index');
+    Route::post('/partners/store', [PartnerController::class, 'store'])->name('partners.store');
+    Route::delete('/partners/{id}', [PartnerController::class, 'destroy'])->name('partners.destroy');
 });
 
 
