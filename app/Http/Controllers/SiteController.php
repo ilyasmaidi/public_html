@@ -47,6 +47,8 @@ class SiteController extends Controller
         // 7. العروض والشركاء (مؤمنة)
         $offer = OfferSection::first() ?: new OfferSection();
         $partners = Partner::all();
+        
+        
 
         return view('home', compact(
             'settings', 
