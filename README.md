@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://via.placeholder.com/400x120?text=QualiPro+Plus+Platform" width="400" alt="QualiPro Plus Logo">
-</p>
 
 <h1 align="center">منصة QualiPro Plus الرقمية</h1>
 
