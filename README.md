@@ -1,66 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://via.placeholder.com/400x120?text=QualiPro+Plus" width="400" alt="QualiPro Plus Logo">
 </p>
 
-## About Laravel
+<p align="center">
+<a href="#"><img src="https://img.shields.io/badge/Status-Development-orange" alt="Status"></a>
+<a href="#"><img src="https://img.shields.io/badge/Focus-ISO%20Certification-blue" alt="Focus"></a>
+<a href="#"><img src="https://img.shields.io/badge/Location-Algeria-green" alt="Location"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## À propos de QualiPro Plus
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+QualiPro Plus est bien plus qu’un simple cabinet de conseil ; nous sommes votre partenaire stratégique pour l’excellence opérationnelle. Basés à Alger, nous accompagnons les entreprises dans leurs démarches de **certification ISO** et de **conformité réglementaire durable**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Cette plateforme (basée sur Laravel) soutient notre mission d'accompagner les entreprises vers la performance via :
+- **Audits et Diagnostics** précis.
+- **Conseil Stratégique** personnalisé.
+- **Formation et Coaching** des équipes.
+- **Mise en conformité HACCP** et sécurité alimentaire.
 
-## Learning Laravel
+## Domaines de Compétence
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Nous intervenons principalement sur les axes suivants :
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Systèmes de Management :** Accompagnement aux normes ISO (9001, 14001, 45001, etc.).
+- **Sécurité Alimentaire :** Expertise approfondie en démarche HACCP et ISO 22000.
+- **Performance Durable :** Stratégies visant une excellence à long terme, au-delà de la simple obtention du certificat.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Actualités Récentes
 
-## Laravel Sponsors
+* **Comprendre la différence :** Procédure vs Processus.
+* **Réussite Audit :** Comment réussir votre audit de certification ISO 22000.
+* **Agroalimentaire :** Les avantages de la démarche HACCP.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Contact
 
-### Premium Partners
+Pour toute demande de devis ou information complémentaire :
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Téléphone :** 0699 75 80 30 / 0776 70 75 80
+- **Email :** [qualiproplus16@gmail.com](mailto:qualiproplus16@gmail.com)
+- **Siège :** Alger, Algérie
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Stack Technique
+Ce projet est développé avec le framework [Laravel](https://laravel.com), garantissant une structure robuste, sécurisée et évolutive pour la gestion des données de nos clients.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+<p align="center">QualiPro Plus @ 2025. Tous droits réservés.</p>
