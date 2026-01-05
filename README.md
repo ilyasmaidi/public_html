@@ -1,49 +1,48 @@
 <p align="center">
-  <img src="https://via.placeholder.com/400x120?text=QualiPro+Plus" width="400" alt="QualiPro Plus Logo">
+  <img src="https://via.placeholder.com/400x120?text=QualiPro+Plus+Platform" width="400" alt="QualiPro Plus Logo">
 </p>
+
+<h1 align="center">منصة QualiPro Plus الرقمية</h1>
 
 <p align="center">
-<a href="#"><img src="https://img.shields.io/badge/Status-Development-orange" alt="Status"></a>
-<a href="#"><img src="https://img.shields.io/badge/Focus-ISO%20Certification-blue" alt="Focus"></a>
-<a href="#"><img src="https://img.shields.io/badge/Location-Algeria-green" alt="Location"></a>
+  <strong>النظام الإداري المتكامل لإدارة شهادات الآيزو (ISO) والاستشارات الاستراتيجية</strong>
 </p>
 
-## À propos de QualiPro Plus
+---
 
-QualiPro Plus est bien plus qu’un simple cabinet de conseil ; nous sommes votre partenaire stratégique pour l’excellence opérationnelle. Basés à Alger, nous accompagnons les entreprises dans leurs démarches de **certification ISO** et de **conformité réglementaire durable**.
+## 🎯 رؤية المشروع
+تم تطوير هذه المنصة لتكون المحرك الرقمي لـ **QualiPro Plus**، بهدف تحويل عمليات الاستشارة والتدقيق التقليدية إلى تجربة رقمية سريعة، دقيقة، واحترافية. تهدف المنصة إلى تعزيز مكانة المكتب كشريك رائد للتميز المستدام في الجزائر.
 
-Cette plateforme (basée sur Laravel) soutient notre mission d'accompagner les entreprises vers la performance via :
-- **Audits et Diagnostics** précis.
-- **Conseil Stratégique** personnalisé.
-- **Formation et Coaching** des équipes.
-- **Mise en conformité HACCP** et sécurité alimentaire.
+## 🚀 المميزات التنافسية للنظام
 
-## Domaines de Compétence
+### 🛡️ أمان وحماية البيانات (Security)
+* **تشفير عالي المستوى:** حماية كاملة لبيانات العملاء والوثائق الحساسة المتعلقة بمعايير ISO و HACCP.
+* **إدارة الصلاحيات:** نظام أمان متطور يضمن وصول الأشخاص المخولين فقط إلى البيانات الحساسة.
+* **نسخ احتياطي تلقائي:** ضمان عدم ضياع أي بيانات حيوية تخص عمليات التدقيق أو التدريب.
 
-Nous intervenons principalement sur les axes suivants :
+### ⚡ كفاءة الأداء وتوفير التكاليف (Cost-Efficiency)
+* **أتمتة العمليات:** تقليل الوقت المستغرق في إعداد التقارير والتشخيصات بنسبة تصل إلى 40%.
+* **واجهة مستخدم احترافية:** تصميم عصري يسهل على العملاء طلب الدعم (Demander Devis) والتفاعل مع خدمات المكتب.
+* **قابلية التوسع:** النظام مصمم ليدعم نمو حجم الأعمال وزيادة عدد العملاء دون الحاجة لاستثمارات برمجية جديدة.
 
-- **Systèmes de Management :** Accompagnement aux normes ISO (9001, 14001, 45001, etc.).
-- **Sécurité Alimentaire :** Expertise approfondie en démarche HACCP et ISO 22000.
-- **Performance Durable :** Stratégies visant une excellence à long terme, au-delà de la simple obtention du certificat.
+### 📊 إدارة الجودة والامتثال
+* **تتبع دقيق للمهام:** مراقبة مراحل الحصول على الشهادات لكل شركة خطوة بخطوة.
+* **نظام تنبيهات:** متابعة مواعيد التجديد والتدقيق لضمان الامتثال المستمر للمعايير الدولية.
 
-## Actualités Récentes
-
-* **Comprendre la différence :** Procédure vs Processus.
-* **Réussite Audit :** Comment réussir votre audit de certification ISO 22000.
-* **Agroalimentaire :** Les avantages de la démarche HACCP.
-
-## Contact
-
-Pour toute demande de devis ou information complémentaire :
-
-- **Téléphone :** 0699 75 80 30 / 0776 70 75 80
-- **Email :** [qualiproplus16@gmail.com](mailto:qualiproplus16@gmail.com)
-- **Siège :** Alger, Algérie
+## 🛠️ خدماتنا المدمجة رقمياً
+النظام يدعم المجالات الأساسية للمكتب بشكل كامل:
+1. **التدقيق والتشخيص:** أدوات رقمية لتقييم مدى مطابقة الشركات للمعايير.
+2. **إدارة المحتوى التعليمي:** قسم خاص بمقالات التوعية (مثل: الفرق بين العمليات والإجراءات).
+3. **التواصل المباشر:** نظام طلب عروض أسعار (Devis) ذكي يربط العميل بالإدارة فوراً.
 
 ---
 
-### Stack Technique
-Ce projet est développé avec le framework [Laravel](https://laravel.com), garantissant une structure robuste, sécurisée et évolutive pour la gestion des données de nos clients.
+## 📞 التواصل والدعم الفني
+تتم إدارة وتطوير هذه المنصة لضمان أعلى مستويات الأداء لـ **QualiPro Plus**.
+
+* **الموقع:** الجزائر العاصمة.
+* **للتواصل الإداري:** 0699 75 80 30 / 0776 70 75 80
+* **البريد الإلكتروني:** qualiproplus16@gmail.com
 
 ---
-<p align="center">QualiPro Plus @ 2025. Tous droits réservés.</p>
+<p align="center">حقوق النشر © 2026 QualiPro Plus. جميع الحقوق محفوظة.</p>
